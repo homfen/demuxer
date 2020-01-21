@@ -1,6 +1,6 @@
 {
   "name": "demuxer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A utility for transmux ts/mp4",
   "main": "src/index.js",
   "directories": {
@@ -52,5 +52,19 @@
       "path": "git-cz"
     }
   },
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goldvideo/demuxer.git"
+  },
+  "keywords": [
+    "demux",
+    "mpegts",
+    "ts",
+    "mp4"
+  ],
+  "bugs": {
+    "url": "https://github.com/goldvideo/demuxer/issues"
+  },
+  "homepage": "https://github.com/goldvideo/demuxer#readme"
 }
