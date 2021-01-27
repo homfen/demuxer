@@ -1,7 +1,7 @@
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
     typeof define === 'function' && define.amd ? define(['exports'], factory) :
-    (global = global || self, factory(global.Demuxer = {}));
+    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.Demuxer = {}));
 }(this, (function (exports) { 'use strict';
 
     /**
@@ -1187,7 +1187,7 @@
             };
         },
         esds: function (data) {
-            let view = new DataView(data.buffer, data.byteOffset, data.byteLength);
+            new DataView(data.buffer, data.byteOffset, data.byteLength);
             return {
                 version: data[0],
                 flags: new Uint8Array(data.subarray(1, 4)),
